@@ -216,10 +216,10 @@ export default function HomePage() {
           <div className="hero-copy">
             <p className="eyebrow">Bodega Don García</p>
             <h1>
-              Vinos y piscos <span>artesanales</span>
+              Hazlo por <span>elección</span>
             </h1>
             <p className="lead">
-              Navalé es una marca de experiencia, tradición y origen. Nuestra colección expresa un estilo premium entre la viticultura, la destilería y la celebración.
+              Navalé reúne vinos y piscos artesanales con una identidad premium, íntima y contemporánea. Descubre una colección pensada para celebraciones, encuentros y momentos que merecen ser recordados.
             </p>
             <div className="cta-row">
               <a className="button primary" href="#portafolio">
@@ -261,16 +261,16 @@ export default function HomePage() {
             <p className="eyebrow">Nosotros</p>
             <h2>Historia de la Bodega Don García</h2>
             <p>
-              Navalé nació como una propuesta para recuperar la esencia de la tradición vitivinícola y la destilería artesanal del Perú. Desde la bodega, cada botella reúne historia, alma de la tierra, buen trabajo en los lotes y un sentido profundo de la conversación.
+              Navalé nació para honrar la tradición, los viñedos y la destilería artesanal. En cada botella, la familia, el tiempo y la tierra se vuelven un legado de sabor, equilibrio y distinción.
             </p>
             <p>
-              Hoy nuestra marca celebra la identidad de la familia, la tierra, las uvas, el tiempo y las mesas donde se comparte un buen trago con intención.
+              Hoy nuestra marca ofrece una experiencia premium para quienes buscan vinos y piscos artesanales con carácter, identidad y un sello personal inconfundible.
             </p>
           </div>
           <div className="story-card">
             <div className="story-badge">Desde 2025</div>
             <h3>Tradición, carácter y distinción</h3>
-            <p>Navalé fusiona vinos y piscos artesanales con una visión premium, honesta y contemporánea.</p>
+            <p>Navalé fusiona la historia del vino con una mirada contemporánea, para celebrar cada mesa y cada ocasión especial.</p>
           </div>
         </div>
       </section>
@@ -284,7 +284,7 @@ export default function HomePage() {
           <div className="catalog-grid">
             {products.map((product) => (
               <article key={product.id} className={`wine-card accent-${product.accent}`}>
-                <div className="mini-bottle">
+                <div className={`mini-bottle gradient-${product.accent}`}>
                   <div className="mini-cap" />
                   <div className="mini-label">
                     <span>{product.title}</span>
